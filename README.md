@@ -40,6 +40,11 @@ The pipeline expects a CSV with the following columns:
 py -3.11 -m pip install pyspark numpy matplotlib seaborn
 ```
 
+## Dataset
+The full dataset file 	ransactions_train_LAST.csv is not stored in this repo due to size.
+Download it from your shared location (e.g., Google Drive) and place it in the project root before
+running the notebook. The lite sample can be used for quick tests.
+
 ## Run (Notebook)
 Open `real-time-fraud_detection.ipynb.ipynb` and run cells in order.
 
