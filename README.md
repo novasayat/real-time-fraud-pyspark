@@ -21,7 +21,7 @@ The pipeline expects a CSV with the following columns:
 - `oldbalanceDest`, `newbalanceDest`: destination account balances before/after
 - `isFraud`: label (0 = non-fraud, 1 = fraud)
 
-## Pipeline Summary
+## Workflow Summary
 1. **Load & Inspect**: Read CSV into Spark DataFrame, check schema and missing values.
 2. **Clean & Cast**: Drop nulls/duplicates; cast numeric columns to numeric types.
 3. **Scale Features**: MinMax scaling for numeric features.
@@ -41,12 +41,12 @@ py -3.11 -m pip install pyspark numpy matplotlib seaborn
 ```
 
 ## Dataset
-The full dataset file 	ransactions_train_LAST.csv is not stored in this repo due to size.
-Download it from your shared location (e.g., Google Drive) and place it in the project root before
+The full dataset file transactions_train_LAST.csv is not stored in this repo due to size.
+Download it from the shared location (e.g., Google Drive) and place it in the project root before
 running the notebook. The lite sample can be used for quick tests.
 
 ## Run (Notebook)
-Open `real-time-fraud_detection.ipynb.ipynb` and run cells in order.
+Open `real-time-fraud_detection.ipynb` and run cells in order.
 
 ### Streaming Demo
 The streaming section reads new CSV files dropped into the `Input/` directory.
